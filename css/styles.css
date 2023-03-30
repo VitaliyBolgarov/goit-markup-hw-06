@@ -822,14 +822,14 @@ img {
 
     padding: 0;
 
-    transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-color: var(--accent);
     border: none;
+    background-color: var(--accent);
     height: 24px;
     width: 24px;
     border-radius: 50%;
