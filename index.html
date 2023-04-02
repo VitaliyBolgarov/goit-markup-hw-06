@@ -318,47 +318,62 @@
         </div>
     </footer>
 
-    <div class="backdrop is-hidde" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="button-close btn" data-modal-close>
-                <svg width="24" height="24" class="btn-close">
-                    <use href="./images/icons/icons-f.svg#cross"></use>
+            <button class="button-close" data-modal-close>
+                <svg class="btn-close">
+                    <use href="./images/icons/icons.svg#cross"></use>
                 </svg>
             </button>
-            <p class="modal-title">Leave your contacts and we will call you back</p>
             <form class="modal-form">
-                <p class="form-field">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="modal-input" name="name" id="name" autofocus required minlength="2"
-                        maxlength="16 ">
-                </p>
-
-                <p class="form-field">
-                    <label for="tel" class="form-label">Phone</label>
-                    <input type="phone" class="modal-input" name="tel" id="tel" required>
-                </p>
-
-                <p class="form-field">
-                    <label for="mail" class="form-label">Email</label>
-                    <input type="email" class="modal-input" name="mail" id="mail" required>
-                </p>
-
-                <p class="form-field">
-                    <label for="comment" class="form-label">Comment</label>
-                    <textarea class="modal-textarea" name="comment" id="comment" rows="2"
-                        placeholder="Text input"></textarea>
-                </p>
-
-                <input type="checkbox" class="input-checkbox" name="agreement" id="agreement">
-                <label for="agreement" class="modal-text">I accept the terms and conditions of the <a href="">Privacy
-                        Policy</a></label>
-
-                <button type="submit" class="send-button btn"><span class="submit-text">Send</span></button>
+                <p class="form-direction">Leave your contacts and we will call you back</p>
+                <label class="form-label">
+                    <span class="label-description">Name</span>
+                    <span class="input-wrapper-box">
+                        <input class="form-input" type="text" name="user-name" required>
+                        <svg class="form-icon">
+                            <use href="./images/icons/icons.svg#name-icon"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form-label">
+                    <span class="label-description">Phone</span>
+                    <span class="input-wrapper-box">
+                        <input class="form-input" type="tel" name="user-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            title="xxx-xxx-xx-xx" required>
+                        <svg class="form-icon">
+                            <use href="./images/icons/icons.svg#phone-icon"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form-label">
+                    <span class="label-description">Email</span>
+                    <span class="input-wrapper-box">
+                        <input class="form-input" type="email" name="user-mail" required>
+                        <svg class="form-icon">
+                            <use href="./images/icons/icons.svg#email-icon"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form-label">
+                    <span class="label-description">Comment</span>
+                    <textarea class="form-input-area" name="user-message" placeholder="Text input">
+    					</textarea>
+                </label>
+                <label class="form-policy-description" for="user-policy">
+                    <input class="form-input-check visually-hidden" id="user-policy" type="checkbox" name="user-policy">
+                    <span class="pseudo-checkbox">
+                        <svg class="check-mark">
+                            <use href="./images/icons/icons.svg#check-mark"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the &nbsp;<a href="">Privacy Policy</a>
+                </label>
+                <button class="button button-dark" type="submit">Send</button>
             </form>
-
-
         </div>
     </div>
+
     <script src="./js/modal.js"></script>
 </body>
 
