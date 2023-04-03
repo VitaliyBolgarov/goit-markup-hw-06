@@ -612,8 +612,8 @@ img {
 
 .soc-media {
     display: inline-block;
-    max-width: 208px;
-    margin-right: 80px;
+    /* max-width: 208px; */
+    /* margin-right: 80px; */
 }
 
 .media-title {
@@ -656,6 +656,9 @@ img {
     background-color: var(--footer-hover);
 }
 
+.subscribe{
+    margin-left: auto;
+}
 
 .subscribe-form{
     display: flex;
@@ -681,7 +684,8 @@ img {
     letter-spacing: 0.04em;
 }
 
-.footer-text {
+.footer-text-subscribe {
+    margin-top: 0;
     margin-bottom: 16px;
     font-weight: 500;
     line-height: 1.5;
