@@ -656,6 +656,11 @@ img {
     background-color: var(--footer-hover);
 }
 
+
+.subscribe-form{
+    display: flex;
+}
+
 .subscribe-field {
     outline: none;
 
